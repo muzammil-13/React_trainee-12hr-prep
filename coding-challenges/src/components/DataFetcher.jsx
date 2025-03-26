@@ -31,11 +31,11 @@ const DataFetcher=()=>{
     return(
         <div>
             <h2>Fetched Data</h2>
-            <ul>
-                {data.slice(0,5).map((item)=>{
+            <ol>
+                {data.slice(0,5).map((item)=>(
                     <li key={item.id}>{item.title}</li>
-                })}
-            </ul>
+                ))}
+            </ol>
         </div>
     )
 }
